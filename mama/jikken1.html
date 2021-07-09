@@ -1,0 +1,271 @@
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>実験1</title>
+		</head>
+		<style>
+			a{
+				text-decoration: none;
+			}
+			ul{
+				list-style: none;
+			}
+			li{
+				word-wrap: break-word;
+			}
+			ol {
+				counter-reset:number; /*数字をリセット*/
+				list-style-type: none!important; /*数字を一旦消す*/
+				padding:0.5em;
+				border: dashed 1px gray;
+				}
+			ol li {
+				position: relative;
+				line-height: 1.5em;
+				padding: 0.5em 0.5em 0.5em 30px;
+				}
+				ol li:before{
+				/* 以下数字をつける */
+				position: absolute;
+				counter-increment: number;
+				content: counter(number);
+				/*数字のデザイン変える*/
+				display:inline-block;
+				background: #74c2f8;
+				color: white;
+				font-family: 'Avenir','Arial Black','Arial',sans-serif;
+				font-weight:bold;
+				font-size: 15px;
+				left: 0;
+				width: 25px;
+				height: 25px;
+				line-height: 25px;
+				text-align: center;
+				/*以下上下中央寄せのため*/
+				top: 50%;
+				-webkit-transform: translateY(-50%);
+				transform: translateY(-50%);
+				}
+			body{
+				background-image: url("jikken1/BgCaro.jpg");
+			}
+			.naiyou1 .bg1 li{
+				float:left;
+				margin-right: 50px;
+				margin-top:25px;
+				position:relative;
+			}
+			.naiyou1 .bg1{
+				margin-left: 250px;
+			}
+			.naiyou2{
+				clear:left;
+
+				font-size: 20px;
+				margin-left: 350px;
+				background-color:rgb(248, 203, 159);
+				padding-bottom: 300px;
+	;
+				height: 250px;
+				width: 900px;
+
+
+
+
+
+
+
+				counter-reset:list;
+				list-style-type:none;
+
+			}
+			.naiyou2 h1{
+				text-align: center;
+			}
+			.naiyou2 .jyunbimono li {
+
+				position:relative;
+				padding: 0 0 0 30px;
+				margin: 7px 0 7px 0px;
+				font-weight: bold;
+				font-size:14px;
+				line-height: 29px;
+				border: dashed 1px transparent;
+				-webkit-transition: 0.3s;
+				-moz-transition: 0.3s;
+				-o-transition: 0.3s;
+				-ms-transition: 0.3s;
+				transition: 0.3s;
+			}
+			.naiyou2 .jyunbimono li:before{
+				counter-increment: list;
+				content: counter(list);
+				position: absolute;
+				left: -10px;
+				width: 30px;
+				height: 30px;
+				text-align: center;
+				color: #fff;
+				line-height:30px;
+				background: #F6A38B;
+				border-radius: 50%;
+				top: 50%;
+				-moz-transform: translateY(-50%);
+				-webkit-transform: translateY(-50%);
+				-o-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				transform: translateY(-50%);
+			}
+			.naiyou2 .img2{
+
+				text-align: center;
+			}
+
+			.naiyou3 ul{
+				border:2px dashed#b1154a;
+				margin-left:350px;
+				margin-right: 280px;;
+				height:auto;
+				line-height: 30px;
+				counter-reset:list;
+				list-style-type:none;
+				width:850px;
+			}
+			.naiyou3 li{
+
+				position:relative;
+				padding: 0 0 0 30px;
+				margin: 7px 0 7px 0px;
+				font-weight: bold;
+				font-size:14px;
+				line-height: 29px;
+				border: dashed 1px transparent;
+				-webkit-transition: 0.3s;
+				-moz-transition: 0.3s;
+				-o-transition: 0.3s;
+				-ms-transition: 0.3s;
+				transition: 0.3s;
+			}
+			.naiyou3 li:before{
+				counter-increment: list;
+				content: counter(list);
+				position: absolute;
+				left: -10px;
+				width: 30px;
+				height: 30px;
+				text-align: center;
+				color: #fff;
+				line-height:30px;
+				background: #ff9090;
+				border-radius: 50%;
+				top: 50%;
+				-moz-transform: translateY(-50%);
+				-webkit-transform: translateY(-50%);
+				-o-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				transform: translateY(-50%);
+			}
+			.naiyou4 {
+				margin-left: 350px;
+			}
+			.naiyou4 h1{
+				border: 2px none;
+				border-radius: 10px;
+				background-color: rgb(255, 151, 65);
+				padding:20px;
+				width:250px;
+				margin-top:50px;
+			}
+			.naiyou4 .naiyou4-1{
+				background-color: white;
+				width:800px;
+				border-radius: 10px;
+				padding:50px;
+				height: auto;
+			}
+			.naiyou4 .naiyou4-1  p{
+				float:left;
+				word-break: break-all;
+				width: 450px;
+			}
+			.naiyou4 .naiyou4-1 img{
+				padding-left:30px;
+			}
+			.modoru{
+				clear:left;
+				margin-left:700px;
+
+				padding: 50px 0;
+
+
+
+			}
+			.modoru a{
+				color: white;
+				background-color: rgb(255, 131, 15);
+				border-radius: 20px;
+				padding:30px 70px;
+
+
+			}
+
+			.modoru a:hover{
+				background-color:chocolate;
+
+			}
+
+
+
+		</style>
+		<body>
+			<section class="naiyou1">
+			<ul class="bg1">
+			   <li><img src="jikken1/img1.png"></li> 
+				<li><img src="jikken1/img1-1.jpg" width="300px" height="300px"></li>
+			</ul> 
+			</section>
+			<section class="naiyou2">
+			 <h1>準備するもの</h1>
+			 <ul class="jyunbimono">   
+				<li><p>ペットボトル</p></li>
+				<li><p>ソーダフレッシュ</p></li>
+				<li><p>20mlアルコール（７０度以上）</p></li>
+				
+
+			</ul>
+			<p class="img2"><img src="koroneIcon.jpg"></p>
+			</section>
+
+			<section class="naiyou3">
+
+				<ul class="jikocyui">
+					<h1>気を付けること</h1>
+					<li>アルコールを使うので、火を注意すること。</li>
+					<li>ペットボトルを開けるとき、音が大きすぎので、耳を近くにおかないでください。</li>
+				
+				</ul>
+			</section>
+			<section class="naiyou4">
+				<h1>実験やってみよう</h1>
+				<ol class="naiyou4-1">
+					<li><p>中を水で少し湿らせたペットボトルにソーダフレッシュを付けてペットボトル中を加圧する（コツペットボトルを押しても凹まなくなるまで加圧すること）</li></p>
+						<img src="koroneIcon.jpg">
+					<li><p>ペットボトルを十分に加圧した後、ソーダフレッシュの蓋を一気に開ける。
+					</p></li>
+					<img src="koroneIcon.jpg">
+					<li><p>ペットボトル中に雲が発生する</p></li>
+					<img src="koroneIcon.jpg">
+					<li><p>ペットボトル中の湿度変化を調べるためにサーモテープを入れて（１）（２）（３）を行う。</p></li>
+					<img src="koroneIcon.jpg">
+					<li><p>サーモテープに変化が起きる（一瞬なので見逃さないように）
+					</p></li>
+					<img src="koroneIcon.jpg">
+
+				</ol>        
+			</section>
+
+			<section class="modoru">
+				<a href="mana.html">modoru</a>
+			</section>
+		</body>
+	</html>
